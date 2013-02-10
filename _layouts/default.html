@@ -4,11 +4,11 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="PGQ - all about replication : Advanced data replication for Postgresql" />
+    <meta name="description" content={{ page.title }}/>
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>PGQ - all about replication</title>
+    <title>{{ page.title }}</title>
   </head>
 
   <body>
@@ -18,8 +18,16 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/pgq">View on GitHub</a>
 
-          <h1 id="project_title">PGQ - all about replication</h1>
-          <h2 id="project_tagline">Advanced data replication for Postgresql</h2>
+          <h1 id="project_title">{{ page.title }}</h1>
+          <h2 id="project_tagline">{{ page.tagline }}</h2>
+
+          <table width="100%">
+              <tr>
+                  <td><a href="http://wiki.postgresql.org/wiki/SkyTools">Read</a></td>
+                  <td><a href="http://pgfoundry.org/projects/skytools/">Use</a></td>
+                  <td><a href="https://github.com/markokr/skytools">Contribute</a></td>
+              </tr>
+          </table>
 
         </header>
     </div>
@@ -27,7 +35,7 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>Advanced data replication for Postgresql</h3>
+        {{ content }}
       </section>
     </div>
 
