@@ -1,0 +1,27 @@
+diff -x .git -x '*.orig' -urN NaturalDocs-1.52/Config/Languages.txt NaturalDocs/Config/Languages.txt
+--- NaturalDocs-1.52/Config/Languages.txt	2019-09-17 20:44:34.202142749 +0300
++++ NaturalDocs/Config/Languages.txt	2011-11-28 14:57:54.000000000 +0200
+@@ -181,10 +181,10 @@
+    Line Comment: --
+    Block Comment: /* */
+    Enum Values: Global
+-   Function Prototype Enders: , ; ) as As AS is Is IS
++   Function Prototype Enders: , ; ) $ '
+    Variable Prototype Enders: , ; ) := default Default DEFAULT
+-   Database Trigger Prototype Enders: begin Begin BEGIN as As AS
+    Database Index Prototype Enders: , ; )
++   Database Trigger Prototype Enders: begin Begin BEGIN
+    Perl Package: NaturalDocs::Languages::PLSQL
+ 
+ 
+diff -x .git -x '*.orig' -urN NaturalDocs-1.52/Config/Topics.txt NaturalDocs/Config/Topics.txt
+--- NaturalDocs-1.52/Config/Topics.txt	2019-09-17 20:44:34.198142699 +0300
++++ NaturalDocs/Config/Topics.txt	2011-11-28 14:57:54.000000000 +0200
+@@ -119,6 +119,7 @@
+ Topic Type: File
+ 
+    Plural: Files
++   Index: No
+    Scope: Always global
+    Page Title If First: Yes
+ 
